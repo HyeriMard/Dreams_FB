@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fistUserProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fistUserText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/their_message"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:text="This is text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fistUserProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fistUserProfile"
+        app:layout_constraintTop_toTopOf="@+id/fistUserProfile"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/firstChatCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="5dp"
+        android:src="@drawable/callvideo"
+        app:layout_constraintBottom_toBottomOf="@+id/fistUserProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fistUserProfile"
+        app:layout_constraintTop_toTopOf="@+id/fistUserProfile" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/firstImage"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/idol"
+        app:layout_constraintStart_toEndOf="@+id/fistUserProfile"
+        app:layout_constraintTop_toTopOf="@+id/fistUserProfile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/secondUserProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondUserText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/my_message"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:text="This is text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/secondUserProfile"
+        app:layout_constraintEnd_toStartOf="@+id/secondUserProfile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondUserProfile"
+        app:layout_constraintWidth_default="wrap" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/secondImage"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/idol"
+        app:layout_constraintEnd_toStartOf="@+id/secondUserProfile"
+        app:layout_constraintTop_toTopOf="@+id/secondUserProfile" />
+
+    <ImageView
+        android:id="@+id/secondChatCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="5dp"
+        android:src="@drawable/callvideo"
+        app:layout_constraintBottom_toBottomOf="@+id/secondUserProfile"
+        app:layout_constraintEnd_toStartOf="@+id/secondUserProfile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondUserProfile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369243362579",
+    "firebase_url": "https://dreams-af645-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dreams-af645",
+    "storage_bucket": "dreams-af645.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369243362579:android:73d589179330acc6f076e6",
+        "android_client_info": {
+          "package_name": "com.example.dreams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369243362579-9rvg9jn3ro11qjtk4rn03dgl5no06ned.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dreams",
+            "certificate_hash": "ae3e0029dae3ffbab7d45255d8a98c609d1fe5de"
+          }
+        },
+        {
+          "client_id": "369243362579-h1lo6nmhtsrrjeli9e0ki062kjafsreq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUbRXAGHO8uTV3blI-C7nuAK2tlR1XeNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369243362579-h1lo6nmhtsrrjeli9e0ki062kjafsreq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/main_appbar" />
+
+        <EditText
+            android:id="@+id/inputAddPost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/botronedittext"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:hint="How are things today?"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/myImage"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myImage"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:elevation="10dp"
+            android:src="@drawable/idol"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/inputAddPost"
+            app:layout_constraintEnd_toStartOf="@id/inputAddPost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/inputAddPost" />
+
+        <ImageView
+            android:id="@+id/add_imagepost"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/inputAddPost"
+            app:layout_constraintStart_toStartOf="@+id/inputAddPost"
+            app:layout_constraintTop_toTopOf="@+id/inputAddPost"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/send_post_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/inputAddPost"
+            app:layout_constraintEnd_toEndOf="@+id/inputAddPost"
+            app:layout_constraintTop_toTopOf="@+id/inputAddPost"
+            app:srcCompat="@drawable/ic_send_blue_24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rclhome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="#BEBEBE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputAddPost"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
